@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>JS</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-ms6">
+                <div class="card">
+                    <div class="card-header">
+                        Lương nhân viên
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nhập lương một ngày : 1000</label>
+                            <input type="hidden" value="1000" id="luongMotNgay" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số ngày làm</label>
+                            <input type="text" name="" id="songayLam" class="form-control">
+                        </div>
+                        <button id="btnTinhtien" class="btn btn-success">Tính tiền</button>
+                    </div>
+
+                    <div id="tinhTienLuong" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <hr>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-ms6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính trung bình 5 số
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Số thứ 1</label>
+                            <input type="text" id="so1" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 2</label>
+                            <input type="text" name="" id="so2" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 3</label>
+                            <input type="text" name="" id="so3" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 4</label>
+                            <input type="text" name="" id="so4" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Số thứ 5</label>
+                            <input type="text" name="" id="so5" class="form-control">
+                        </div>
+                        <button id="btnTinhTB" class="btn btn-dark">Tính tiền</button>
+                    </div>
+
+                    <div id="tinhKQ" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-ms6">
+                <div class="card">
+                    <div class="card-header">
+                        Quy đổi tiền USD sang VND
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Giá 1 USD = 23.500 VND</label>
+                            <input type="hidden" value="23500" id="giaUsd" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập số USD muốn đổi</label>
+                            <input type="text" name="" id="giaVnd" class="form-control">
+                        </div>
+                        <button id="btnThanhTien" class="btn btn-danger">Thành tiền</button>
+                    </div>
+
+                    <div id="tinhThanhTien" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-ms6">
+                <div class="card">
+                    <div class="card-header">
+                        Tính diện tích, chu vi HCN
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nhập chiều dài</label>
+                            <input type="text"  id="cD" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="">Nhập chiều rộng</label>
+                            <input type="text" name="" id="cR" class="form-control">
+                        </div>
+                        <button id="btnTinhHCN" class="btn btn-success">Tính</button>
+                    </div>
+
+                    <div id="tinhKqHCN" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-ms6">
+                <div class="card">
+                    <div class="card-header">
+                        Tổng 2 số
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label for="">Nhập số</label>
+                            <input type="text"  id="number" class="form-control">
+                        </div>
+                        <button id="btnTong" class="btn btn-success">Tính</button>
+                    </div>
+
+                    <div id="tinhTong" class="card-footer text-muted">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./demo.js"></script>
+</body>
+
+</html>
